@@ -7,13 +7,15 @@
     <title>NUT SHELL</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <link rel="stylesheet" href="./css/accordion.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
     <div class="page-wrapper">
-        <header class="header">
-            <div class="container header__container">
+        <header class="header section__bacgr">
+            <div class="container header__container section__bacgr-container">
                 <div class="header__top top-header">
                     <span class="line"></span>
                     <h1 class="top-header__title">Architectural and design studio "NUT SHELL"</h1>
@@ -21,17 +23,18 @@
                         your
                         apartment, house, office or&nbsp;business on&nbsp;a&nbsp;turnkey basis, using the principles
                         of&nbsp;ecology and smart home technology</p>
-                    <a class="top-header__link link" href="#">Get a free consultation</a>
+                    <a class="top-header__link link" href="#application">Get a free consultation</a>
                 </div>
                 <div class="header__bottom bottom-header">
                     <p class="bottom-header__text">Get a&nbsp;professional consultation
                         of&nbsp;an&nbsp;architect-designer for free and find out the options for the cost of&nbsp;your
                         project</p>
-                    <img class="bottom-header__arrow" src="./img/arrow.svg" alt="стрелка">
+                    <img class="bottom-header__arrow" src="./img/icon/arrow.svg" alt="стрелка">
                     <div class="bottom-header__links">
-                        <a class="bottom-header__link link">GET THE "TOP 10 Repair Mistakes" GUIDE FOR FREE</a>
-                        <a class="bottom-header__link-call link-call" href="tel:1111111111">
-                            <img class="link-call__icon" src="./img/call.svg" alt="стрелка">
+                        <a class="bottom-header__link link" href="#application">GET THE "TOP 10 Repair Mistakes" GUIDE
+                            FOR FREE</a>
+                        <a class="bottom-header__link-call link-call" href="tel:+1111111111">
+                            <img class="link-call__icon" src="./img/icon/call.svg" alt="стрелка">
                             <span>CALL NOW</span>
                         </a>
                     </div>
@@ -39,7 +42,7 @@
             </div>
         </header>
         <main>
-            <section class="modern section" id="interior">
+            <section class="modern section" id="modern">
                 <div class="modern__container container section__container">
                     <h2 class="section__title modern__title">Modern interior</h2>
                     <p class="modern__descr section__descr">Functional spaces that meet the most stringent environmental
@@ -47,43 +50,61 @@
                         -</p>
                     <ul class="modern__list cards">
                         <li class="modern__item card">
-                            <img class="card__img" src="./img/accom-1.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/modern/slide_1.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">Lounge space design</span>
                         </li>
                         <li class="card">
-                            <img class="card__img" src="./img/accom-1.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/modern/slide_2.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">Bedroom design</span>
                         </li>
                         <li class="card">
-                            <img class="card__img" src="./img/accom-1.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/modern/slide_3.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">living room design</span>
                         </li>
                         <li class="card">
-                            <img class="card__img" src="./img/accom-1.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/modern/slide_4.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">Work area design</span>
                         </li>
                         <li class="card">
-                            <img class="card__img" src="./img/accom-1.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/modern/slide_5.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">Hall design</span>
                         </li>
                         <li class="card">
-                            <img class="card__img" src="./img/accom-1.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/modern/slide_6.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">Entrance group design</span>
                         </li>
                         <li class="card">
-                            <img class="card__img" src="./img/accom-1.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/modern/slide_7.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">Bedroom design</span>
                         </li>
                         <li class="card">
-                            <img class="card__img" src="./img/accom-1.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/modern/slide_8.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">Studio kitchen design</span>
                         </li>
                         <li class="card">
-                            <img class="card__img" src="./img/accom-1.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/modern/slide_9.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">Kitchen Design</span>
                         </li>
                     </ul>
-                    <a class="modern__link link" href="#">REQUEST FOR A COMPLETE PORTFOLIO</a>
+                    <a class="modern__link link" href="#application">REQUEST FOR A COMPLETE PORTFOLIO</a>
                 </div>
             </section>
             <section class="neoclass section" id="neoclass">
@@ -94,120 +115,144 @@
                         furniture and exclusive materials -</p>
                     <ul class="neoclass__list cards">
                         <li class="neoclass__item card">
-                            <img class="card__img" src="./img/accom-2.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/neoclass/slide_1.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">Bedroom design</span>
                         </li>
                         <li class="neoclass__item card">
-                            <img class="card__img" src="./img/accom-2.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/neoclass/slide_2.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">living room design</span>
                         </li>
                         <li class="neoclass__item card">
-                            <img class="card__img" src="./img/accom-2.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/neoclass/slide_3.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">Bedroom design</span>
                         </li>
                         <li class="neoclass__item card">
-                            <img class="card__img" src="./img/accom-2.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/neoclass/slide_4.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">living room design</span>
                         </li>
                         <li class="neoclass__item card">
-                            <img class="card__img" src="./img/accom-2.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/neoclass/slide_5.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">Bedroom design</span>
                         </li>
                         <li class="neoclass__item card">
-                            <img class="card__img" src="./img/accom-2.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/neoclass/slide_6.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">living room design</span>
                         </li>
                         <li class="neoclass__item card">
-                            <img class="card__img" src="./img/accom-2.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/neoclass/slide_7.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">Bedroom design</span>
                         </li>
                         <li class="neoclass__item card">
-                            <img class="card__img" src="./img/accom-2.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/neoclass/slide_8.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">living room design</span>
                         </li>
                         <li class="neoclass__item card">
-                            <img class="card__img" src="./img/accom-2.jpg" alt="Изображение интерьера">
+                            <div class="card__img-box">
+                                <img class="card__img" src="./img/neoclass/slide_9.jpg" alt="Изображение интерьера">
+                            </div>
                             <span class="card__title">Bedroom design</span>
                         </li>
                     </ul>
-                    <a class="neoclass__link link" href="#">REQUEST FOR A COMPLETE PORTFOLIO</a>
+                    <a class="neoclass__link link" href="#application">REQUEST FOR A COMPLETE PORTFOLIO</a>
                 </div>
             </section>
-            <section class="section about" id="about">
-                <div class="container section__container about__container">
-                    <h2 class="section__title about__title">Studio "NUT SHELL" in numbers</h2>
-                    <p class="section__descr about__descr">- We will be happy to make any of your fundamental dreams
+            <section class="section__bacgr numbers" id="numbers">
+                <div class="container numbers__container section__bacgr-container">
+                    <h2 class="section__title numbers__title">Studio "NUT SHELL" in numbers</h2>
+                    <p class="section__descr numbers__descr">- We will be happy to make any of your fundamental dreams
                         come true -</p>
-                    <ul class="about__list">
-                        <li class="about__item about-card">
+                    <ul class="numbers__list">
+                        <li class="numbers__item numbers-card">
                             <span class="line"></span>
-                            <span class="about-card__number section__title">6 years</span>
-                            <div class="about-card__body">
-                                <h3 class="about-card__title">Academic architectural education of each designer studio
+                            <span class="section__title numbers-card__number ">6 years</span>
+                            <div class="numbers-card__body">
+                                <h3 class="numbers-card__title">Academic architectural education of each designer studio
                                 </h3>
-                                <p class="about-card__descr">You entrust the work to specialized specialists</p>
+                                <p class="numbers-card__descr">You entrust the work to specialized specialists</p>
                             </div>
                         </li>
-                        <li class="about__item about-card">
+                        <li class="numbers__item numbers-card">
                             <span class="line"></span>
-                            <span class="about-card__number section__title">10 years</span>
-                            <div class="about-card__body">
-                                <h3 class="about-card__title">Practical experience of the head of the studio</h3>
-                                <p class="about-card__descr">You get practical and proven recommendations that guarantee
+                            <span class="numbers-card__number section__title">10 years</span>
+                            <div class="numbers-card__body">
+                                <h3 class="numbers-card__title">Practical experience of the head of the studio</h3>
+                                <p class="numbers-card__descr">You get practical and proven recommendations that
+                                    guarantee
                                     results</p>
                             </div>
                         </li>
-                        <li class="about__item about-card">
+                        <li class="numbers__item numbers-card">
                             <span class="line"></span>
-                            <span class="about-card__number section__title">207</span>
-                            <div class="about-card__body">
-                                <h3 class="about-card__title">Number of unique projects</h3>
-                                <p class="about-card__descr">Your style preferences are at the heart of the project</p>
+                            <span class="numbers-card__number section__title">207</span>
+                            <div class="numbers-card__body">
+                                <h3 class="numbers-card__title">Number of unique projects</h3>
+                                <p class="numbers-card__descr">Your style preferences are at the heart of the project
+                                </p>
                             </div>
                         </li>
-                        <li class="about__item about-card">
+                        <li class="numbers__item numbers-card">
                             <span class="line"></span>
-                            <span class="about-card__number section__title">12 000</span>
-                            <div class="about-card__body">
-                                <h3 class="about-card__title">Amount of designed area in sq.m.</h3>
-                                <p class="about-card__descr">You can be sure of the realism and relevance of the project
+                            <span class="numbers-card__number section__title">12 000</span>
+                            <div class="numberst-card__body">
+                                <h3 class="numbers-card__title">Amount of designed area in sq.m.</h3>
+                                <p class="numbers-card__descr">You can be sure of the realism and relevance of the
+                                    project
                                 </p>
                             </div>
                         </li>
                     </ul>
-                    <ul class="about__list list2">
-                        <li class="about__item about-card">
+                    <ul class="numbers__list list2">
+                        <li class="numbers__item numbers-card">
                             <span class="line"></span>
-                            <span class="about-card__number section__title">78%</span>
-                            <div class="about-card__body">
-                                <h3 class="about-card__title">The number of customers who apply for recommendations</h3>
-                                <p class="about-card__descr">You will have a desire to apply again for a new project</p>
+                            <span class="numbers-card__number section__title">78%</span>
+                            <div class="numbers-card__body">
+                                <h3 class="numbers-card__title">The number of customers who apply for recommendations
+                                </h3>
+                                <p class="numbers-card__descr">You will have a desire to apply again for a new project
+                                </p>
                             </div>
                         </li>
-                        <li class="about__item about-card">
+                        <li class="numbers__item numbers-card">
                             <span class="line"></span>
-                            <span class="about-card__number section__title">22%</span>
-                            <div class="about-card__body">
-                                <h3 class="about-card__title">Budget savings in the presence of a complete project is
+                            <span class="numbers-card__number section__title">22%</span>
+                            <div class="numbers-card__body">
+                                <h3 class="numbers-card__title">Budget savings in the presence of a complete project is
                                 </h3>
-                                <p class="about-card__descr">Allows you to think through the logistics at each stage and
+                                <p class="numbers-card__descr">Allows you to think through the logistics at each stage
+                                    and
                                     avoid possible mistakes</p>
                             </div>
                         </li>
-                        <li class="about__item about-card">
+                        <li class="numbers__item numbers-card">
                             <span class="line"></span>
-                            <span class="about-card__number section__title">15%</span>
-                            <div class="about-card__body">
-                                <h3 class="about-card__title">Discount on materials for designer supervision and
+                            <span class="numbers-card__number section__title">15%</span>
+                            <div class="numbers-card__body">
+                                <h3 class="numbers-card__title">Discount on materials for designer supervision and
                                     selection
                                     of materials</h3>
-                                <p class="about-card__descr">You will receive our wholesale benefits and loyalty
+                                <p class="numbers-card__descr">You will receive our wholesale benefits and loyalty
                                     programs
                                     from contractors</p>
                             </div>
                         </li>
                     </ul>
-                    <a class="about__link link" href="#">GET 3 LAYOUT OPTIONS FOR FREEO</a>
+                    <a class="numbers__link link" href="#application">GET 3 LAYOUT OPTIONS FOR FREEO</a>
                 </div>
             </section>
             <section class="section coffee-house">
@@ -216,16 +261,16 @@
                     <div class="swiper coffee-house__swiper">
                         <div class="swiper-wrapper coffee-house__swiper-wrapper">
                             <div class="swiper-slide coffee-house__slide">
-                                <img class="coffee-house__img" src="./img/accom-5.jpg" alt="Интерьер">
+                                <img class="coffee-house__img" src="./img/coffe/slide_1.jpg" alt="Интерьер">
                             </div>
                             <div class="swiper-slide coffee-house__slide">
-                                <img class="coffee-house__img" src="./img/accom-8.jpg" alt="Интерьер">
+                                <img class="coffee-house__img" src="./img/coffe/slide_2.jpg" alt="Интерьер">
                             </div>
                             <div class="swiper-slide coffee-house__slide">
-                                <img class="coffee-house__img" src="./img/accom-7.jpg" alt="Интерьер">
+                                <img class="coffee-house__img" src="./img/coffe/slide_3.jpg" alt="Интерьер">
                             </div>
                             <div class="swiper-slide coffee-house__slide">
-                                <img class="coffee-house__img" src="./img/accom-6.jpg" alt="Интерьер">
+                                <img class="coffee-house__img" src="./img/coffe/slide_4.jpg" alt="Интерьер">
                             </div>
                         </div>
                         <div class="swiper-button-prev coffee-house-button-prev">
@@ -233,7 +278,7 @@
                         <div class="swiper-button-next coffee-house-button-next">
                         </div>
                     </div>
-                    <a class="coffee-house__link link" href="#">REQUEST FOR A COMPLETE PORTFOLIO</a>
+                    <a class="coffee-house__link link" href="#application">REQUEST FOR A COMPLETE PORTFOLIO</a>
                 </div>
             </section>
             <section class="section office">
@@ -242,21 +287,21 @@
                     <div class="swiper office__swiper">
                         <div class="swiper-wrapper office__swiper-wrapper">
                             <div class="swiper-slide office__slide">
-                                <img class="" src="./img/accom-4.jpg" alt="Интерьер">
+                                <img class="" src="./img/office/slide_1.jpg" alt="Интерьер">
                             </div>
                             <div class="swiper-slide office__slide">
-                                <img class="" src="./img/accom-3.jpg" alt="Интерьер">
+                                <img class="" src="./img/office/slide_2.jpg" alt="Интерьер">
                             </div>
                             <div class="swiper-slide office__slide">
-                                <img class="" src="./img/accom-7.jpg" alt="Интерьер">
+                                <img class="" src="./img/office/slide_3.jpg" alt="Интерьер">
                             </div>
                             <div class="swiper-slide office__slide">
-                                <img class="" src="./img/accom-6.jpg" alt="Интерьер">
+                                <img class="" src="./img/office/slide_4.jpg" alt="Интерьер">
                             </div>
                         </div>
                         <div class="swiper-pagination office-pagination"></div>
                     </div>
-                    <a class="office__link link" href="#">REQUEST FOR A COMPLETE PORTFOLIO</a>
+                    <a class="office__link link" href="#application">REQUEST FOR A COMPLETE PORTFOLIO</a>
                 </div>
             </section>
             <section class="section additionally" id="additionally">
@@ -265,19 +310,19 @@
                         projects</h3>
                     <ul class="additionally__list cards">
                         <li class="additionally__item card">
-                            <img class="card__img" src="./img/slider4.png" alt="Изображение дизайна">
+                            <img class="card__img" src="./img/additionally/slide_1.jpg" alt="Изображение дизайна">
                             <span class="card__title">Architecture</span>
                         </li>
                         <li class="additionally__item card">
-                            <img class="card__img" src="./img/slider4.png" alt="Изображение дизайна">
+                            <img class="card__img" src="./img/additionally/slide_2.jpg" alt="Изображение дизайна">
                             <span class="card__title">Design</span>
                         </li>
                         <li class="additionally__item card">
-                            <img class="card__img" src="./img/slider4.png" alt="Изображение дизайна">
+                            <img class="card__img" src="./img/additionally/slide_3.jpg" alt="Изображение дизайна">
                             <span class="card__title">Air conditioning</span>
                         </li>
                     </ul>
-                    <a class="additionally__link link" href="#">CALCULATE PROJECT COST OPTIONS</a>
+                    <a class="additionally__link link" href="#application">CALCULATE PROJECT COST OPTIONS</a>
                 </div>
             </section>
             <section class="section jointly" id="jointly">
@@ -363,16 +408,364 @@
                                 after day, with value for everyone.</p>
                         </li>
                     </ul>
-                    <a class="jointly__link link" href="#">GET 3 LAYOUT OPTIONS FOR FREE</a>
+                    <a class="jointly__link link" href="#application">GET 3 LAYOUT OPTIONS FOR FREE</a>
                 </div>
+            </section>
+            <section class="questions section__bacgr" id="questions">
+                <div class="container section__bacgr-container questions__container">
+                    <h2 class="section__title questions__title">Common Questions</h2>
+                    <div class="accordion-container questions__acc">
+                        <div class="ac">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger">About the complexity of the repair and
+                                    project
+                                    ...
+                                    “Is it possible to invite individual specialists for design and repair, or is it
+                                    better to have a team?”</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <p class="ac-text">Any of the decisions has the right to life. One of the ways to
+                                    save
+                                    money can be to invite both individual craftsmen, instead of a team, and
+                                    separate
+                                    visualizers, technical designers and decorators, in this case you yourself will
+                                    play
+                                    the role of a manager or foreman, monitor and control the progress of work.
+                                    The most successful projects can be safely attributed to turnkey projects,
+                                    within
+                                    which a narrowly focused specialist and a pro who has an academic education and
+                                    practical experience in his field is responsible for each process. Each
+                                    participant
+                                    in the repair is interested in the overall result, there is an understanding of
+                                    their areas of responsibility, but at the same time there is coherence in
+                                    teamwork,
+                                    understanding at the level of "without further ado". Much in the work depends on
+                                    the
+                                    communication of contractors, which can either avoid possible errors and
+                                    shifting
+                                    responsibility, or vice versa will slow down the repair process, increase the
+                                    time
+                                    and waste resources.
+                                    Having set the priorities in the system correctly: risks, assessment of your
+                                    participation, deadlines and budget, you will be able to correctly formulate a
+                                    request for what principle to follow when choosing performers.
+                                    It is worth noting that the NUT SHELL studio works with reliable contractors and
+                                    proven teams. We will be happy to recommend our colleagues on various
+                                    construction
+                                    issues.</p>
+                            </div>
+                        </div>
+                        <div class="ac">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger">About the importance of having time
+                                    allotted
+                                    for the project!</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <p class="ac-text">An important point is the availability of time for the design of
+                                    any
+                                    property. There are projects when, due to circumstances, there is an urgent need
+                                    to
+                                    reduce the time. For example: the beginning of a return on investment, the
+                                    desire to
+                                    start repairs as soon as possible, the need for a quick entry and start of work
+                                    processes.
+                                    However, in any business, before starting, it is important to create a business
+                                    project, create a competent financial model, weigh the risks of finding reliable
+                                    contractors. Having time to create a project will create a safety cushion, bring
+                                    clarity and understanding to the final result, the ability to correctly
+                                    calculate
+                                    construction estimates and organize the logistics of repair work. In any of
+                                    these
+                                    cases, I always recommend finding the optimal margin of time and starting
+                                    repairs
+                                    with an approved album of drawings and / or visualizations in hand. When
+                                    paralleling
+                                    the processes of repair + design = any adjustment will cost money, time and
+                                    often
+                                    unnecessary consumption of materials.</p>
+                            </div>
+                        </div>
+                        <div class="ac">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger">“Is the role of logistics, estimates,
+                                    schedules
+                                    significant?”, “Is the need for the project justified before the start of repair
+                                    work?”, “How adequate is the budget to the wishes?”</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <p class="ac-text">A good designer will answer frankly. Sometimes the answer
+                                    disappoints
+                                    the client, but the truth is better than the unexpected disappointment when the
+                                    apartment is left with unfinished walls due to the wrong budget and strategy.
+                                    The golden rule PRICE-QUALITY has not been canceled ... but this bunch lacks the
+                                    third pillar of support - PLANNED RATIONALITY. Or, to put it simply, strategy,
+                                    logistics… including specifications, estimates, as well as the project itself.
+                                    All
+                                    of them must be completed and approved (I emphasize APPROVED) before
+                                    implementation
+                                    and the start of construction work - this will protect against unnecessary
+                                    alterations, and the consequence of waste will help to draw up a clear schedule
+                                    of
+                                    the process, compliance with stages, aging technologies and purchasing the
+                                    necessary
+                                    materials. Small deviations and blots are inevitable - but this is not
+                                    commensurate
+                                    with the chaos when deadlines are stretched, teams change, not only significant
+                                    sums
+                                    are lost, but also nerves.</p>
+                            </div>
+                        </div>
+                        <div class="ac">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger">What are the design trends for
+                                    2022?</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <p class="ac-text">1. The emphasis on sustainability is the main vector in the
+                                    design of
+                                    2020. Natural elements and materials are actively introduced into the house
+                                    2. Practicality, conciseness and minimalism in the organization of space
+                                    3. Minimum decor
+                                    4. Live plants (vertical, hanging or in pots)
+                                    5. Neutral natural tones and graphic lines
+                                    6. Zones are being transformed and there are sliding systems and partitions
+                                    7. Actual creation of workspaces in any property. The comfort and ergonomics of
+                                    these areas are now, more than ever, especially relevant in quarantine mode.
+                                    directly affects the efficiency
+                                    8. Maximum trend = laconic Scandinavia + Japanese motifs + use of warm natural
+                                    colors</p>
+                            </div>
+                        </div>
+                        <div class="ac">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger">What styles do NUT SHELL studio work
+                                    in?</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <p class="ac-text">We have a wide experience of work in various styles. In our
+                                    decisions, we start from the vision and tasks of the customer, directing it in
+                                    such
+                                    a way that the final product not only meets, but also exceeds its expectations.
+                                    In
+                                    our projects, we strive to get closer to nature, draw on its strength and
+                                    beauty, as
+                                    a source of eternal energy. Even the presence of a few wooden details in the
+                                    interior can charge with positive emotions and inspiration, switch from the
+                                    bustle
+                                    of the city. Of course, the high ergonomics of space is also of no less
+                                    importance,
+                                    when every detail, socket and switch is given the most rational arrangement. Our
+                                    favorite style is a combination of functionality, technology and natural
+                                    aesthetics,
+                                    which only in combination will allow you to organize a cozy space with the
+                                    prospect
+                                    of a long, comfortable and happy life.</p>
+                            </div>
+                        </div>
+                        <div class="ac">
+                            <h2 class="ac-header">
+                                <button type="button" class="ac-trigger">Cost of work?</button>
+                            </h2>
+                            <div class="ac-panel">
+                                <p class="ac-text">The cost of works is tied to sq.m. There are various packages
+                                    that
+                                    allow you to work in different budgets and form the scope of work for
+                                    visualizations
+                                    and drawings. If we talk about a full package of drawings and visualizations for
+                                    residential real estate - the cost will be $ 30 per 1 sq.m. (dated 01.12.2022)
+                                    We
+                                    always offer our potential customers an individual flexible system and several
+                                    possible options for work, based on the key needs of the customer and the terms
+                                    of
+                                    reference. Contact us for advice - we will be happy to guide you on any
+                                    questions
+                                    and realize your ideas!</p>
+                            </div>
+                        </div>
 
+                    </div>
+                    <a class="questions__link link" href="#application">
+                        <span>GET A CHECKLIST</span>
+                        <span>"top repair mistakes"</span>
+                    </a>
+                </div>
+            </section>
+            <section class="section about" id="about">
+                <div class="container about__container">
+                    <img class="about__img" src="./img/about.jpg" alt="Мое фотo">
+                    <div class="about__right">
+                        <div class="about__right-body">
+                            <h3 class="section__title about__title">About Us ...</h3>
+                            <p class="section__descr about__subtitle">Sapurko Tatyana - founder of the company, Master
+                                of
+                                Architecture of
+                                Buildings and Structures, winner of international architecture competitions, winner of
+                                European grant programs, participant in innovation forums, author of articles on energy
+                                efficiency.</p>
+                            <p class="about__descr">“My 10 years of experience allows me to provide high-quality,
+                                professional assistance in all areas of architecture and design. I am committed to
+                                effective
+                                and creative cooperation based on the principles of preserving a healthy environment and
+                                supporting innovation in the development of residential and commercial real estate
+                                objects.
+                            </p>
+                            <button class="about__btn">Read more...</button>
+                            <div class="about__btn-text">
+                                <p>"NUT SHELL" is a creative studio that allows you to furnish any
+                                    potential space. We are useful to people, starting with the overhaul of an
+                                    apartment,
+                                    ending
+                                    with the construction of private cottages and commercial facilities.</p>
+                                <p>Architectural workshop "NUT SHELL" is a design workshop and an architectural bureau
+                                    that
+                                    will help you quickly, efficiently, without any fuss to organize "your" individual
+                                    architectural space and make the interior cozy, ergonomic and author's, fully
+                                    fulfilling
+                                    the
+                                    task. In our work, we combine comfort and energy efficiency, and we also develop air
+                                    conditioning and energy-saving technologies.</p>
+                            </div>
+                        </div>
+                        <a class="about__link link" href="#application">REQUEST FOR A COMPLETE PORTFOLIO</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section__bacgr principle" id="principle">
+                <div class="container section__bacgr-container">
+                    <h3 class="section__title principle__title">Principles of our work</h3>
+                    <ul class="principle__list">
+                        <li class="principle__item">
+                            <img class="principle__item-img" src="./img/princip/icon_1.png" alt="иконка">
+                            <p class="principle__item-text">We take care of natural resources and cultivate ideas with
+                                care</p>
+                        </li>
+                        <li class="principle__item">
+                            <img class="principle__item-img" src="./img/princip/icon_3.png" alt="иконка">
+                            <p class="principle__item-text">We break the usual stereotypes and clear the shell of
+                                everyday life</p>
+                        </li>
+                        <li class="principle__item">
+                            <img class="principle__item-img" src="./img/princip/icon_2.png" alt="иконка">
+                            <p class="principle__item-text">We do what we love and love what we do</p>
+                        </li>
+                        <li class="principle__item">
+                            <img class="principle__item-img" src="./img/princip/icon_4.png" alt="иконка">
+                            <p class="principle__item-text">We use intelligence and modern technological capabilities
+                            </p>
+                        </li>
+                    </ul>
+                    <a class="principle__link link" href="#application">GET 3 LAYOUT OPTIONS FOR FREE</a>
+                </div>
+            </section>
+            <section class="section comments" id="comments">
+                <div class="container section__container">
+                    <h3 class="section__title comments__title">What clients say about us</h3>
+                    <div class="swiper comments-top__swiper comments__swiper">
+                        <div class="swiper-wrapper comments__swiper-wrapper">
+                            <div class="swiper-slide comments__slide">
+                                <img class="comments__img" src="./img/comments/comment_1.jpg" alt="Скрин переписки">
+                            </div>
+                            <div class="swiper-slide comments__slide">
+                                <img class="comments__img" src="./img/comments/comment_2.jpg" alt="Скрин переписки">
+                            </div>
+                            <div class="swiper-slide comments__slide">
+                                <img class="comments__img" src="./img/comments/comment_3.jpg" alt="Скрин переписки">
+                            </div>
+                            <div class="swiper-slide comments__slide">
+                                <img class="comments__img" src="./img/comments/comment_4.jpg" alt="Скрин переписки">
+                            </div>
+                            <div class="swiper-slide commentside">
+                                <img class="comments__img" src="./img/comments/comment_1.jpg" alt="Скрин переписки">
+                            </div>
+                            <div class="swiper-slide comments__slide">
+                                <img class="comments__img" src="./img/comments/comment_2.jpg" alt="Скрин переписки">
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev button-prev comments-top-button-prev">
+                            <img class="comments-button__arrow" src="./img/icon/arrow.svg" alt="">
+                        </div>
+                        <div class="swiper-button-next button-next comments-top-button-next">
+                            <img class="comments-button__arrow" src="./img/icon/arrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper comments-bottom__swiper comments__swiper">
+                        <div class="swiper-wrapper comments__swiper-wrapper">
+                            <div class="swiper-slide comments__slide">
+                                <img class="comments__img" src="./img/comments/comment_4.png" alt="Скрин переписки">
+                            </div>
+                            <div class="swiper-slide comments__slide">
+                                <img class="comments__img" src="./img/comments/comment_5.png" alt="Скрин переписки">
+                            </div>
+                            <div class="swiper-slide comments__slide">
+                                <img class="comments__img" src="./img/comments/comment_7.jpg" alt="Скрин переписки">
+                            </div>
+                            <div class="swiper-slide comments__slide">
+                                <img class="comments__img" src="./img/comments/comment_8.jpg" alt="Скрин переписки">
+                            </div>
+                            <div class="swiper-slide commentside">
+                                <img class="comments__img" src="./img/comments/comment_4.png" alt="Скрин переписки">
+                            </div>
+                            <div class="swiper-slide comments__slide">
+                                <img class="comments__img" src="./img/comments/comment_5.png" alt="Скрин переписки">
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev button-prev comments-bottom-button-prev">
+                            <img class="comments-button__arrow" src="./img/icon/arrow.svg" alt="">
+                        </div>
+                        <div class="swiper-button-next button-next comments-bottom-button-next">
+                            <img class="comments-button__arrow" src="./img/icon/arrow.svg" alt="">
+                        </div>
+                    </div>
+                    <a class="comments__link link" href="#application">CALCULATE PROJECT COST OPTIONS</a>
+                </div>
+            </section>
+            <section class="section__bacgr application" id="application">
+                <div class="section__bacgr-container application__container">
+                    <div class="application__body">
+                        <img class="application__icon" src="./img/icon/form.svg" alt="иконка">
+                        <h3 class="application__title">LEAVE A REQUEST RIGHT NOW AND GET 3 FURNITURE PLANNING OPTIONS
+                            FOR
+                            YOUR OBJECT</h3>
+                        <span class="application__descr">To do this, fill out the form below and click the button</span>
+                        <form action="#" class="application__form form">
+                            <label class="form__label" for="name">Имя*
+                                <input class="form__input" type="text" id="name">
+                            </label>
+                            <label class="form__label" for="email">Phone number (viber\telegram)*
+                                <input class="form__input" type="text" id="email">
+                            </label>
+                            <button class="form__btn link" type="submit">GET 3 LAYOUT OPTIONS FOR FREE</button>
+                        </form>
+                    </div>
+                </div>
             </section>
         </main>
-        <footer>
-            <h3>hghhghghgj</h3>
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__descr">
+                    <a class="footer__logo" href="#">nutshell.com.ua</a>
+                    <p class="footer__descr-text">Architectural design studio</p>
+                    <p class="footer__descr-text">Let's create your ideal space
+                        and fill with comfort, using the principles of ecology and technologies of "smart home" in 21
+                        days</p>
+                </div>
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#about">About Us</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#modern">Projects</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#comments">Reviews</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#questions">Questions and
+                                answers</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="footer__btn link" href="#application">REQUEST A COST FOR YOUR PROJECT</a>
+            </div>
         </footer>
     </div>
     <script src="./js/swiper-bundle.js"></script>
+    <script src="./js/accordion.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

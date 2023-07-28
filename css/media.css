@@ -1,0 +1,52 @@
+@media (max-width: 990px) {
+    .container {
+        max-width: 930px;
+    }
+
+    .section {
+        margin-bottom: 30px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header__top {
+        margin-bottom: 20px;
+    }
+
+    .bottom-header__arrow {
+        margin-bottom: 20px;
+    }
+
+    .bottom-header__links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .numbers{
+        height: 1200px;
+    }
+
+    .numbers__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .list2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .numbers-card {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .questions {
+        height: 1160px;
+    }
+
+    .about__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
