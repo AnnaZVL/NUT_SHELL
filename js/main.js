@@ -20,9 +20,9 @@ const swiperOffice = new Swiper('.office__swiper', {
     slidesPerView: 1,
     spaceBetween: 15,
     loop: true,
-    // autoplay: {
-    //     delay: 1000,
-    //   },
+    autoplay: {
+        delay: 1000,
+      },
     pagination: {
         el: ".office-pagination",
         type: "bullets",
