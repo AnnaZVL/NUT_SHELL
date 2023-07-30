@@ -50,6 +50,7 @@ body {
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
+    font-size: 14px;
     line-height: 25px;
     height: 100%;
     color: var(--color-text);
@@ -81,8 +82,8 @@ ul {
     border-radius: 30px;
     cursor: pointer;
     text-align: center;
+    line-height: 21px;
     color: var(--color-white);
-    background: rgb(233,51,20);
     background: linear-gradient(90deg, rgba(233,51,20,1) 0%, rgba(249,101,38,1) 100%);
     transition: background 0.3s ease-in-out;
 }
@@ -111,22 +112,21 @@ main {
 .section {    
     margin-bottom: 50px;
     padding-top: 50px;
+    position: relative;
 }
 
 .section__bacgr {
     padding-top: 50px;
-    padding-bottom: 50px;    
+    padding-bottom: 50px;     
     position: relative;
+    inset: 0;
+    background-color: rgba(13, 13, 18, 0.56);   
+}
+
+.header, .numbers, .questions, .principle, .application {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.section__bacgr::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: rgba(13, 13, 18, 0.56);
 }
 
 .section__container {    
@@ -198,7 +198,6 @@ main {
 /*Header*/
 .header {    
     background-image: url(../img/header.jpg);   
-    height: 695px;
 }
 
 .header__top {
@@ -297,8 +296,7 @@ main {
 
 /*Numbers*/
 .numbers {   
-    background-image: url(../img/numbers.jpg);   
-    height: 990px;
+    background-image: url(../img/numbers.jpg);      
 }
 
 .numbers__title, .numbers__descr {
@@ -307,15 +305,14 @@ main {
 
 .numbers__list {
     margin-bottom: 30px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    gap: 30px; 
     width: 100%;
-}
-
-.list2 {
-    margin-bottom: 50px;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .numbers-card {
@@ -324,28 +321,29 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    height: 100%;
+    justify-content: space-around;
+    height: auto;
     background-color: var(--color-white);
     border-radius: 5px;
     text-align: center;
     max-width: 243px;
+    width: calc((100% - 90px) / 3);    
+}
+
+.numbers-card__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .numbers-card__number {
     margin-bottom: 30px;
 }
 
-.numbers-card__body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .numbers-card__title {
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 22px;
 }
@@ -361,6 +359,10 @@ main {
     width: 100%;
     height: auto;
     overflow: hidden;
+}
+
+.swiper-slide {
+    object-fit: fill;
 }
 
 .coffee-house-button-prev,
@@ -420,10 +422,11 @@ main {
     font-size: 16px;
 }
 
-.jointly__item-icon {
+.jointly__item-icon {    
     padding: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: rgb(245 242 238);
     border-radius: 100%;
     width: 100px;
@@ -462,7 +465,6 @@ main {
 
 .questions {   
     background-image: url(../img/questions.jpg);   
-    height: 1060px;
 }
 
 .questions__title {
@@ -482,7 +484,7 @@ main {
 }
 
 .ac .ac-trigger {
-    padding: 20px 32px 20px 8px;
+    padding: 20px 40px 20px 8px;
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 26px;
@@ -515,6 +517,7 @@ main {
 
 .about__img {
     height: 100%;
+    object-fit: fill;
 }
 
 .about__right {
@@ -604,8 +607,7 @@ main {
 
 /*Principle*/
 .principle {
-    background-image: url(../img/princip/working.jpg);
-    height: 500px;    
+    background-image: url(../img/princip/working.jpg);        
 }
 
 .principle__title {
@@ -646,8 +648,12 @@ main {
 .comments__swiper {
     padding: 0 30px;
     width: 100%;
-    height: 590px;
+    height: 100%;
     overflow: hidden;
+}
+
+.comments__img {
+    object-fit: cover;
 }
 
 .comments-top__swiper {
@@ -688,8 +694,7 @@ main {
 
 /*Application*/
 .application {
-    background-image: url(../img/form.jpg);
-    height: 685px;
+    background-image: url(../img/form.jpg);   
 }
 
 .application__body {
@@ -725,8 +730,12 @@ main {
 .application__form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 24px;
+}
+
+.form {
+    width: 100%;
 }
 
 .form__label {
@@ -746,9 +755,13 @@ main {
     width: 100%;
 }
 
-.form__input:focus {
-    outline: 1px solid #3b99fc;
+.form__input.error {
+    outline: 1px solid red;
 }
+
+/* .form__input:focus {
+    outline: 1px solid #3b99fc;
+} */
 
 .form__btn {
     margin-top: 56px;
