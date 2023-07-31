@@ -165,10 +165,14 @@ main {
 }
 
 .cards {
+    margin: 0 auto;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*grid-template-columns: repeat(auto-fit, 250px);*/
+    justify-content: center;
     gap: 30px;
+    width: 100%;
 }
 
 .card {
@@ -176,6 +180,11 @@ main {
     flex-direction: column;
     gap: 20px;
     height: 100%;
+    width: 100%;
+}
+
+.card:nth-last-child(1) {
+    grid-column: 3 / 3;    
 }
 
 .card__img-box {
@@ -305,14 +314,15 @@ main {
 
 .numbers__list {
     margin-bottom: 30px;
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr); */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    align-items: center;
     gap: 30px; 
     width: 100%;
-    display: flex;
+    /*display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center;*/
 }
 
 .numbers-card {
@@ -322,12 +332,12 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: auto;
+    height: 100%;
     background-color: var(--color-white);
     border-radius: 5px;
     text-align: center;
     max-width: 243px;
-    width: calc((100% - 90px) / 3);    
+    /*width: calc((100% - 90px) / 3);  */  
 }
 
 .numbers-card__top {
@@ -515,8 +525,13 @@ main {
     gap: 30px;
 }
 
+.about__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 .about__img {
-    height: 100%;
     object-fit: fill;
 }
 

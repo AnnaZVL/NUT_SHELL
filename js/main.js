@@ -10,7 +10,7 @@ const swiperCoffe = new Swiper('.coffee-house__swiper', {
         prevEl: '.coffee-house-button-prev',
     },
     breakpoints: {
-        568: {
+        768: {
             slidesPerView: 2,
             spaceBetween: 32,
         }}
@@ -30,7 +30,7 @@ const swiperOffice = new Swiper('.office__swiper', {
         dynamicBullets: true,
         },
     breakpoints: {
-        568: {
+        768: {
             slidesPerView: 2,
             spaceBetween: 32,
         }}
@@ -115,3 +115,19 @@ $form.addEventListener('submit', (e) => {
         }
     })
 });
+
+function openFullscreen(img) {
+    if (img.requestFullscreen) {
+      img.requestFullscreen({ navigationUI: "show" });
+    } else if (img.mozRequestFullScreen) { // Firefox
+      img.mozRequestFullScreen({ navigationUI: "show" });
+    } else if (img.webkitRequestFullscreen) { // Chrome, Safari and Opera
+      img.webkitRequestFullscreen({ navigationUI: "show" });
+    } else if (img.msRequestFullscreen) { // IE/Edge
+      img.msRequestFullscreen({ navigationUI: "show" });
+    }
+  }
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+    
+  });

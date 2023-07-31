@@ -10,6 +10,9 @@
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
+    .card:nth-last-child(1) {
+        grid-column: auto;    
+    }
 
     .card:nth-child(2n + 1):last-child {
         grid-column: span 2;
@@ -109,6 +112,22 @@
         font-size: 14px;
     }
 
+    .coffee-house__swiper {
+        padding: 0;
+        padding-bottom: 40px;
+    }
+
+    .coffee-house-button-prev,
+    .coffee-house-button-next {
+        top: 100%;
+        width: 20px;
+        height: 20px;       
+    }
+
+    .swiper-button-prev:after, .swiper-button-next:after {
+        font-size: 24px;
+    }
+
     .jointly__list {
         padding-left: 30px;
         align-items: start;
@@ -181,22 +200,6 @@
 
     .numbers__list {
         grid-template-columns: 1fr;
-    }
-
-    .coffee-house__swiper {
-        padding: 0;
-        padding-bottom: 40px;
-    }
-
-    .coffee-house-button-prev,
-    .coffee-house-button-next {
-        top: 100%;
-        width: 20px;
-        height: 20px;       
-    }
-
-    .swiper-button-prev:after, .swiper-button-next:after {
-        font-size: 24px;
     }
 
     .application__body {

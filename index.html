@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/swiper-bundle.css">
     <link rel="stylesheet" href="./css/accordion.css">
+    <link rel="stylesheet" href="./css/fancybox.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
 </head>
@@ -56,49 +57,56 @@
                     <ul class="modern__list cards">
                         <li class="modern__item card">
                             <div class="card__img-box">
-                                <img class="card__img" src="./img/modern/slide_1.jpg" alt="Изображение интерьера">
+                                <img class="card__img" src="./img/modern/slide_1.jpg" data-fancybox="gallery"
+                                    alt="Изображение интерьера">
                             </div>
                             <span class="card__title">Lounge space design</span>
                         </li>
                         <li class="card">
                             <div class="card__img-box">
-                                <img class="card__img" src="./img/modern/slide_2.jpg" alt="Изображение интерьера">
+                                <img class="card__img" src="./img/modern/slide_2.jpg" data-fancybox="gallery"
+                                    alt="Изображение интерьера">
                             </div>
                             <span class="card__title">Bedroom design</span>
                         </li>
                         <li class="card">
                             <div class="card__img-box">
-                                <img class="card__img" src="./img/modern/slide_3.jpg" alt="Изображение интерьера">
+                                <img class="card__img" src="./img/modern/slide_3.jpg" data-fancybox="gallery"
+                                    alt="Изображение интерьера">
                             </div>
                             <span class="card__title">living room design</span>
                         </li>
                         <li class="card">
                             <div class="card__img-box">
-                                <img class="card__img" src="./img/modern/slide_4.jpg" alt="Изображение интерьера">
+                                <img class="card__img" src="./img/modern/slide_4.jpg" data-fancybox="gallery"
+                                    alt="Изображение интерьера">
                             </div>
                             <span class="card__title">Work area design</span>
                         </li>
                         <li class="card">
                             <div class="card__img-box">
-                                <img class="card__img" src="./img/modern/slide_5.jpg" alt="Изображение интерьера">
+                                <img class="card__img" src="./img/modern/slide_5.jpg" data-fancybox="gallery"
+                                    alt="Изображение интерьера">
                             </div>
                             <span class="card__title">Hall design</span>
                         </li>
                         <li class="card">
                             <div class="card__img-box">
-                                <img class="card__img" src="./img/modern/slide_6.jpg" alt="Изображение интерьера">
+                                <img class="card__img" src="./img/modern/slide_6.jpg" data-fancybox="gallery"
+                                    alt="Изображение интерьера">
                             </div>
                             <span class="card__title">Entrance group design</span>
                         </li>
-                        <li class="card">
+                        <!-- <li class="card">
                             <div class="card__img-box">
                                 <img class="card__img" src="./img/modern/slide_7.jpg" alt="Изображение интерьера">
                             </div>
                             <span class="card__title">Bedroom design</span>
-                        </li>
+                        </li> -->
                         <li class="card">
                             <div class="card__img-box">
-                                <img class="card__img" src="./img/modern/slide_8.jpg" alt="Изображение интерьера">
+                                <img class="card__img" src="./img/modern/slide_8.jpg" data-fancybox="gallery"
+                                    alt="Изображение интерьера">
                             </div>
                             <span class="card__title">Studio kitchen design</span>
                         </li>
@@ -121,55 +129,63 @@
                     <ul class="neoclass__list cards">
                         <li class="neoclass__item card">
                             <div class="card__img-box">
-                                <img class="card__img" src="./img/neoclass/slide_1.jpg" alt="Изображение интерьера">
+                                <img class="card__img" src="./img/neoclass/slide_1.jpg" onclick="openFullscreen(this)"
+                                    alt="Изображение интерьера">
                             </div>
                             <span class="card__title">Bedroom design</span>
                         </li>
                         <li class="neoclass__item card">
                             <div class="card__img-box">
-                                <img class="card__img" src="./img/neoclass/slide_2.jpg" alt="Изображение интерьера">
+                                <img class="card__img" src="./img/neoclass/slide_2.jpg" onclick="openFullscreen(this)"
+                                    alt="Изображение интерьера">
                             </div>
                             <span class="card__title">living room design</span>
                         </li>
                         <li class="neoclass__item card">
                             <div class="card__img-box">
-                                <img class="card__img" src="./img/neoclass/slide_3.jpg" alt="Изображение интерьера">
+                                <img class="card__img" src="./img/neoclass/slide_3.jpg" onclick="openFullscreen(this)"
+                                    alt="Изображение интерьера">
                             </div>
                             <span class="card__title">Bedroom design</span>
                         </li>
                         <li class="neoclass__item card">
                             <div class="card__img-box">
-                                <img class="card__img" src="./img/neoclass/slide_4.jpg" alt="Изображение интерьера">
+                                <img class="card__img" src="./img/neoclass/slide_4.jpg" onclick="openFullscreen(this)"
+                                    alt="Изображение интерьера">
                             </div>
                             <span class="card__title">living room design</span>
                         </li>
                         <li class="neoclass__item card">
                             <div class="card__img-box">
-                                <img class="card__img" src="./img/neoclass/slide_5.jpg" alt="Изображение интерьера">
+                                <img class="card__img" src="./img/neoclass/slide_5.jpg" onclick="openFullscreen(this)"
+                                    alt="Изображение интерьера">
                             </div>
                             <span class="card__title">Bedroom design</span>
                         </li>
                         <li class="neoclass__item card">
                             <div class="card__img-box">
-                                <img class="card__img" src="./img/neoclass/slide_6.jpg" alt="Изображение интерьера">
+                                <img class="card__img" src="./img/neoclass/slide_6.jpg" onclick="openFullscreen(this)"
+                                    alt="Изображение интерьера">
                             </div>
                             <span class="card__title">living room design</span>
                         </li>
                         <li class="neoclass__item card">
                             <div class="card__img-box">
-                                <img class="card__img" src="./img/neoclass/slide_7.jpg" alt="Изображение интерьера">
+                                <img class="card__img" src="./img/neoclass/slide_7.jpg" onclick="openFullscreen(this)"
+                                    alt="Изображение интерьера">
                             </div>
                             <span class="card__title">Bedroom design</span>
                         </li>
-                        <li class="neoclass__item card">
+                        <!-- <li class="neoclass__item card">
                             <div class="card__img-box">
                                 <img class="card__img" src="./img/neoclass/slide_8.jpg" alt="Изображение интерьера">
                             </div>
                             <span class="card__title">living room design</span>
-                        </li>
+                        </li> -->
                         <li class="neoclass__item card">
                             <div class="card__img-box">
-                                <img class="card__img" src="./img/neoclass/slide_9.jpg" alt="Изображение интерьера">
+                                <img class="card__img" src="./img/neoclass/slide_9.jpg" onclick="openFullscreen(this)"
+                                    alt="Изображение интерьера">
                             </div>
                             <span class="card__title">Bedroom design</span>
                         </li>
@@ -600,7 +616,10 @@
             </section>
             <section class="section about" id="about">
                 <div class="container about__container">
-                    <img class="about__img" src="./img/about.jpg" alt="Мое фотo">
+                    <div class="about__left">
+                        <img class="about__img" src="./img/about.jpg" alt="Мое фотo">
+                        <a class="about__link link" href="#application">REQUEST FOR A COMPLETE PORTFOLIO</a>
+                    </div>
                     <div class="about__right">
                         <div class="about__right-body">
                             <h3 class="section__title about__title">About Us ...</h3>
@@ -634,8 +653,8 @@
                                     conditioning and energy-saving technologies.</p>
                             </div>
                         </div>
-                        <a class="about__link link" href="#application">REQUEST FOR A COMPLETE PORTFOLIO</a>
                     </div>
+
                 </div>
             </section>
             <section class="principle" id="principle">
@@ -669,7 +688,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section comments" id="comments">
+            <!-- <section class="section comments" id="comments">
                 <div class="container section__container">
                     <h3 class="section__title comments__title">What clients say about us</h3>
                     <div class="swiper comments-top__swiper comments__swiper">
@@ -730,7 +749,7 @@
                     </div>
                     <a class="comments__link link" href="#application">CALCULATE PROJECT COST OPTIONS</a>
                 </div>
-            </section>
+            </section> -->
             <section class="application" id="application">
                 <div class="section__bacgr">
                     <div class="container section__container application__container">
@@ -782,6 +801,7 @@
     <script src="./js/swiper-bundle.js"></script>
     <script src="./js/accordion.js"></script>
     <script src="./js/just-validate.production.min.js"></script>
+    <script src="./js/fancybox.umd.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
