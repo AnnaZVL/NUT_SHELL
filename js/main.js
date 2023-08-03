@@ -36,46 +36,6 @@ const swiperOffice = new Swiper('.office__swiper', {
         }}
 });
 
-const swiperCommentsTop = new Swiper('.comments-top__swiper', {
-    slidesPerView: 1,
-    spaceBetween: 32,
-    loop: true,
-    navigation: {
-        nextEl: '.comments-top-button-next',
-        prevEl: '.comments-top-button-prev',
-    },
-    breakpoints: {
-        1024: {
-            slidesPerView: 3,
-            spaceBetween:64
-        },
-        568: {
-            slidesPerView: 2,
-            spaceBetween:64
-        }
-    }
-});
-
-const swiperCommentsBottom = new Swiper('.comments-bottom__swiper', {
-    slidesPerView: 1,
-    spaceBetween: 32,
-    loop: true,
-    navigation: {
-        nextEl: '.comments-bottom-button-next',
-        prevEl: '.comments-bottom-button-prev',
-    },
-    breakpoints: {
-        1024: {
-            slidesPerView: 3,
-            spaceBetween:50
-        },
-        568: {
-            slidesPerView: 2,
-            spaceBetween:64
-        }
-    }
-});
-
 //Аккордион секции вопросов
 new Accordion('.questions__acc');
 
@@ -116,18 +76,22 @@ $form.addEventListener('submit', (e) => {
     })
 });
 
-function openFullscreen(img) {
-    if (img.requestFullscreen) {
-      img.requestFullscreen({ navigationUI: "show" });
-    } else if (img.mozRequestFullScreen) { // Firefox
-      img.mozRequestFullScreen({ navigationUI: "show" });
-    } else if (img.webkitRequestFullscreen) { // Chrome, Safari and Opera
-      img.webkitRequestFullscreen({ navigationUI: "show" });
-    } else if (img.msRequestFullscreen) { // IE/Edge
-      img.msRequestFullscreen({ navigationUI: "show" });
-    }
-  }
+// function openFullscreen(img) {
+//     if (img.requestFullscreen) {
+//       img.requestFullscreen({ navigationUI: "show" });
+//     } else if (img.mozRequestFullScreen) { // Firefox
+//       img.mozRequestFullScreen({ navigationUI: "show" });
+//     } else if (img.webkitRequestFullscreen) { // Chrome, Safari and Opera
+//       img.webkitRequestFullscreen({ navigationUI: "show" });
+//     } else if (img.msRequestFullscreen) { // IE/Edge
+//       img.msRequestFullscreen({ navigationUI: "show" });
+//     }
+//   }
 
-Fancybox.bind('[data-fancybox="gallery"]', {
+Fancybox.bind('[data-fancybox="gallery_modern"]', {
     
-  });
+});
+
+Fancybox.bind('[data-fancybox="gallery_neo"]', {
+
+});
