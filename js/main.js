@@ -65,14 +65,30 @@ validate
     },    
   ]);
 
-const $form = document.querySelector('.form');
+const $form = document.querySelector('.form'),
+$name = document.getElementById('name')
+const TOKEN = '6429995960:AAH2icRifBKSo73IKJt-cnD98TH6mumIqqM', 
+    CHAT_ID = '-1001941193516';
+const URL = `https://api.telegram.org/bot${ TOKEN }/sendMessage`
 
 $form.addEventListener('submit', (e) => {
     e.preventDefault();
     document.querySelectorAll('.form__input').forEach(el => {
         if (el.classList.contains('just-validate-error-field')) {
             el.classList.add('error');
-        }
+        } 
+    });
+
+    let message = `Заявка от ${$name.value}. Номер телефона: ${this.phone.value}`;
+    
+    axios.post(URL, {
+        chat_id: CHAT_ID,
+        text: message
+    })
+    .then (res => {
+        $name.value = '';
+        this.phone.value = '';
+        alert("Application accepted. We will contact you shortly");
     })
 });
 
@@ -95,3 +111,4 @@ Fancybox.bind('[data-fancybox="gallery_modern"]', {
 Fancybox.bind('[data-fancybox="gallery_neo"]', {
 
 });
+

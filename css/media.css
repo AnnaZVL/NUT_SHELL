@@ -209,4 +209,8 @@
     .form__btn {
         margin-top: 25px;
     }
+
+    .footer__container {
+        grid-template-columns: 1fr;
+    }
 }
