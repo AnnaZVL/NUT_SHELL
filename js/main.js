@@ -65,6 +65,10 @@ validate
     },    
   ]);
 
+document.querySelectorAll('.form__input').forEach(el => {
+    el.classList.remove('error');
+})
+
 const $form = document.querySelector('.form'),
 $name = document.getElementById('name')
 const TOKEN = '6429995960:AAH2icRifBKSo73IKJt-cnD98TH6mumIqqM', 
@@ -73,36 +77,34 @@ const URL = `https://api.telegram.org/bot${ TOKEN }/sendMessage`
 
 $form.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    let message = `Заявка от ${$name.value}. Номер телефона: ${this.phone.value}`;
+
     document.querySelectorAll('.form__input').forEach(el => {
         if (el.classList.contains('just-validate-error-field')) {
             el.classList.add('error');
-        } 
-    });
+        };
 
-    let message = `Заявка от ${$name.value}. Номер телефона: ${this.phone.value}`;
-    
-    axios.post(URL, {
-        chat_id: CHAT_ID,
-        text: message
-    })
-    .then (res => {
-        $name.value = '';
-        this.phone.value = '';
-        alert("Application accepted. We will contact you shortly");
-    })
+        el.addEventListener('input', () => {
+            el.classList.remove('error');
+        });       
+
+    });
+    //Отправка запроса если все поля заполнены
+    if (validate.isValid) {
+        axios.post(URL, {
+            chat_id: CHAT_ID,
+            text: message
+        })
+        .then (res => {
+            $name.value = '';
+            this.phone.value = '';
+            alert("Application accepted. We will contact you shortly");
+        })
+    };
 });
 
-// function openFullscreen(img) {
-//     if (img.requestFullscreen) {
-//       img.requestFullscreen({ navigationUI: "show" });
-//     } else if (img.mozRequestFullScreen) { // Firefox
-//       img.mozRequestFullScreen({ navigationUI: "show" });
-//     } else if (img.webkitRequestFullscreen) { // Chrome, Safari and Opera
-//       img.webkitRequestFullscreen({ navigationUI: "show" });
-//     } else if (img.msRequestFullscreen) { // IE/Edge
-//       img.msRequestFullscreen({ navigationUI: "show" });
-//     }
-//   }
+
 
 Fancybox.bind('[data-fancybox="gallery_modern"]', {
     
