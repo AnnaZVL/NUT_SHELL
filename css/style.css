@@ -344,10 +344,6 @@ main {
     align-items: center;
     gap: 30px; 
     width: 100%;
-    /*display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;*/
 }
 
 .numbers-card {
@@ -362,7 +358,6 @@ main {
     border-radius: 5px;
     text-align: center;
     max-width: 243px;
-    /*width: calc((100% - 90px) / 3);  */  
 }
 
 .numbers-card__top {
@@ -802,7 +797,19 @@ main {
     color: var(--color-orange);
 }
 
-.footer__btn {
-    align-self: flex-start;
-    justify-self: start;
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer__link {
+    padding: 15px;
+}
+
+.footer__link-icon {
+    width: 35px;
+    height: 35px;
 }
