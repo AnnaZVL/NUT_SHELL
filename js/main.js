@@ -71,8 +71,8 @@ document.querySelectorAll('.form__input').forEach(el => {
 
 const $form = document.querySelector('.form'),
     $name = document.getElementById('name');
-
-const TOKEN = '6429995960:AAH2icRifBKSo73IKJt-cnD98TH6mumIqqM', 
+    const TOKEN = '6558286573:AAEbyTB-_LeenuSsLPYvgWRw7p-K8l5A9QA',
+//const TOKEN = '6429995960:AAH2icRifBKSo73IKJt-cnD98TH6mumIqqM', 
     CHAT_ID = '-1001933752636';
 
 const URL = `https://api.telegram.org/bot${ TOKEN }/sendMessage`
