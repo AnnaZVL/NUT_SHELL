@@ -70,9 +70,11 @@ document.querySelectorAll('.form__input').forEach(el => {
 })
 
 const $form = document.querySelector('.form'),
-$name = document.getElementById('name')
+    $name = document.getElementById('name');
+
 const TOKEN = '6429995960:AAH2icRifBKSo73IKJt-cnD98TH6mumIqqM', 
-    CHAT_ID = '-1001941193516';
+    CHAT_ID = '-1001933752636';
+
 const URL = `https://api.telegram.org/bot${ TOKEN }/sendMessage`
 
 $form.addEventListener('submit', (e) => {
@@ -104,8 +106,6 @@ $form.addEventListener('submit', (e) => {
     };
 });
 
-
-
 Fancybox.bind('[data-fancybox="gallery_modern"]', {
     
 });
@@ -113,4 +113,3 @@ Fancybox.bind('[data-fancybox="gallery_modern"]', {
 Fancybox.bind('[data-fancybox="gallery_neo"]', {
 
 });
-
